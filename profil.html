@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil - SMK MUTHIA HARAPAN</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- HEADER / TOPBAR -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & School Name -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- Logo Placeholder (Badge/Shield style matching sketch) -->
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-900 flex items-center justify-center text-white shadow-md shadow-blue-500/20">
+                        <i class="fa-solid => fa-graduation-cap text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">
+                            SMK MUTHIA HARAPAN
+                        </h1>
+                        <p class="text-xs text-slate-500 font-medium">Unggul, Berkarakter & Berprestasi</p>
+                    </div>
+                </div>
+
+                <!-- Login Portal Button -->
+                <div class="flex items-center">
+                    <a href="#login" class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition duration-200 shadow-sm hover:shadow">
+                        <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                        Login Portal
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-slate-900 text-white border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                    <a href="beranda.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Beranda</a>
+                    <a href="profil.html" class="px-4 py-3 text-xs sm:text-sm font-semibold text-blue-400 border-b-2 border-blue-500 bg-slate-800/50">Profil</a>
+                    <a href="akademik.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Akademik</a>
+                    <a href="kesiswaan.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Kesiswaan</a>
+                   <a href="portal.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Portal</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12 sm:space-y-16">
+
+        <!-- PAGE TITLE -->
+        <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Halaman Profil
+            </h2>
+            <p class="text-sm text-slate-500 mt-1">Informasi visi, misi, dan struktur organisasI SMK Muthia Harapan.</p>
+        </div>
+
+        <!-- SECTION 1: VISI & MISI -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Visi & Misi</h3>
+            </div>
+
+            <!-- 2x2 Grid Layout matching the sketch -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Box 1: Visi Utama -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200">
+                    <div class="flex items-center space-x-3 mb-3 text-blue-600">
+                        <i class="fa-solid fa-eye text-lg"></i>
+                        <h4 class="font-bold text-slate-900 text-base">Visi Sekolah</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        "Mewujudkan generasi unggul, berkarakter mulia, berprestasi di bidang akademik dan non-akademik, serta berwawasan lingkungan global pada tahun 2030."
+                    </p>
+                </div>
+
+                <!-- Box 2: Misi Utama -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200">
+                    <div class="flex items-center space-x-3 mb-3 text-blue-600">
+                        <i class="fa-solid fa-bullseye text-lg"></i>
+                        <h4 class="font-bold text-slate-900 text-base">Misi Pembelajaran</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Menyelenggarakan proses pembelajaran yang inovatif, kreatif, kontekstual, dan berbasis teknologi informasi untuk mengoptimalkan potensi peserta didik.
+                    </p>
+                </div>
+
+                <!-- Box 3: Misi Karakter -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200">
+                    <div class="flex items-center space-x-3 mb-3 text-blue-600">
+                        <i class="fa-solid fa-hands-holding-child text-lg"></i>
+                        <h4 class="font-bold text-slate-900 text-base">Misi Pembinaan Karakter</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Menanamkan nilai-nilai keimanan, ketakwaan, budi pekerti luhur, serta semangat kebangsaan dan gotong royong dalam kehidupaan sehari-hari.
+                    </p>
+                </div>
+
+                <!-- Box 4: Misi Lingkungan & Kerjasama -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200">
+                    <div class="flex items-center space-x-3 mb-3 text-blue-600">
+                        <i class="fa-solid fa-leaf text-lg"></i>
+                        <h4 class="font-bold text-slate-900 text-base">Misi Lingkungan & Kemitraan</h4>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Mewujudkan lingkungan sekolah yang bersih, asri, sehat, dan kondusif serta membangun kemitraan strategis dengan instansi nasional maupun internasional.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: STRUKTUR ORGANISASI -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Struktur Organisasi</h3>
+            </div>
+
+            <!-- Hierarchy Diagram Box -->
+            <div class="bg-white p-6 sm:p-10 rounded-2xl border border-slate-200/80 shadow-sm overflow-x-auto">
+                <div class="min-w-[650px] flex flex-col items-center py-4">
+                    
+                    <!-- Level 1: Kepala Sekolah -->
+                    <div class="relative flex flex-col items-center">
+                        <div class="w-56 p-4 bg-blue-50 border-2 border-blue-600 rounded-xl text-center shadow-sm">
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-1">Kepala Sekolah</span>
+                            <span class="font-semibold text-slate-900 text-sm block">ASEP SAEPUDIN</span>
+                        </div>
+                        <!-- Connecting Line Down -->
+                        <div class="w-0.5 h-8 bg-slate-300"></div>
+                    </div>
+
+                    <!-- Level 2 Horizontal Line -->
+                    <div class="w-3/4 h-0.5 bg-slate-300"></div>
+
+                    <!-- Level 2 Nodes (Wakil & Komite) -->
+                    <div class="w-3/4 flex justify-between relative">
+                        
+                        <!-- Wakasek Kurikulum -->
+                        <div class="flex flex-col items-center -mt-0.5">
+                            <div class="w-0.5 h-6 bg-slate-300"></div>
+                            <div class="w-48 p-3 bg-slate-100 border border-slate-300 rounded-lg text-center shadow-sm">
+                                <span class="text-xs font-semibold text-slate-600 block">Wakasek Kurikulum</span>
+                                <span class="text-xs font-medium text-slate-800">PAK ENDI</span>
+                            </div>
+                            <!-- Line to sub-items -->
+                            <div class="w-0.5 h-8 bg-slate-300"></div>
+                        </div>
+
+                        <!-- Wakasek Kesiswaan -->
+                        <div class="flex flex-col items-center -mt-0.5">
+                            <div class="w-0.5 h-6 bg-slate-300"></div>
+                            <div class="w-48 p-3 bg-slate-100 border border-slate-300 rounded-lg text-center shadow-sm">
+                                <span class="text-xs font-semibold text-slate-600 block">Wakasek Kesiswaan</span>
+                                <span class="text-xs font-medium text-slate-800">PAK ENCEP</span>
+                            </div>
+                            <!-- Line to sub-items -->
+                            <div class="w-0.5 h-8 bg-slate-300"></div>
+                        </div>
+
+                        <!-- Wakasek Humas & Sarpras -->
+                        <div class="flex flex-col items-center -mt-0.5">
+                            <div class="w-0.5 h-6 bg-slate-300"></div>
+                            <div class="w-48 p-3 bg-slate-100 border border-slate-300 rounded-lg text-center shadow-sm">
+                                <span class="text-xs font-semibold text-slate-600 block">Wakasek Sarpras & Humas</span>
+                                <span class="text-xs font-medium text-slate-800">BANU, APUD</span>
+                            </div>
+                            <!-- Line to sub-items -->
+                            <div class="w-0.5 h-8 bg-slate-300"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- Level 3 Horizontal Connection Lines -->
+                    <div class="w-full max-w-[620px] flex justify-between">
+                        <div class="w-full grid grid-cols-6 gap-2">
+                            <div class="col-span-2 border-t-2 border-slate-300 mx-auto w-full"></div>
+                            <div class="col-span-2 border-t-2 border-slate-300 mx-auto w-full"></div>
+                            <div class="col-span-2 border-t-2 border-slate-300 mx-auto w-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Level 3 Nodes (Staf & Guru) -->
+                    <div class="w-full max-w-[640px] grid grid-cols-6 gap-2 pt-0">
+                        <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-md text-center">
+                            <span class="text-[11px] font-medium text-slate-700 block">Dewan Guru</span>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-md text-center">
+                            <span class="text-[11px] font-medium text-slate-700 block">Wali Kelas</span>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-md text-center">
+                            <span class="text-[11px] font-medium text-slate-700 block">Bimbingan Konseling</span>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-md text-center">
+                            <span class="text-[11px] font-medium text-slate-700 block">Tata Usaha</span>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-md text-center">
+                            <span class="text-[11px] font-medium text-slate-700 block">Pustakawan</span>
+                        </div>
+                        <div class="p-2.5 bg-slate-50 border border-slate-200 rounded-md text-center">
+                            <span class="text-[11px] font-medium text-slate-700 block">LaPoran</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+            <p>&copy; 2026 SMK MUTHIA HARAPAN. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

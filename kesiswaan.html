@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pendaftaran (PPDB) - SMK Muthia Harapan Cicalengka</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- HEADER / TOPBAR -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & School Name -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- Logo Badge matching sketch -->
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-900 flex flex-col items-center justify-center text-white shadow-md shadow-blue-500/20 leading-none">
+                        <span class="text-[10px] font-bold tracking-widest">SMK</span>
+                        <i class="fa-solid fa-graduation-cap text-sm mt-0.5"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">
+                            SMK MUTHIA HARAPAN 
+                        </h1>
+                        <p class="text-xs text-slate-500 font-medium">Unggul, Berkarakter & Berprestasi</p>
+                    </div>
+                </div>
+
+                <!-- Login Portal Button -->
+                <div class="flex items-center">
+                    <a href="#login" class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition duration-200 shadow-sm hover:shadow">
+                        <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                        Login Portal
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-slate-900 text-white border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                  <a href="beranda.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Beranda</a>
+                    <a href="profil.html" class="px-4 py-3 text-xs sm:text-sm font-semibold text-blue-400 border-b-2 border-blue-500 bg-slate-800/50">Profil</a>
+                    <a href="akademik.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Akademik</a>
+                    <a href="kesiswaan.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Kesiswaan</a>
+                   <a href="portal.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Portal</a>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12 sm:space-y-16">
+
+        <!-- PAGE TITLE -->
+        <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Halaman Pendaftaran (PPDB)
+            </h2>
+            <p class="text-sm text-slate-500 mt-1">Penerimaan Peserta Didik Baru (PPDB) SMK Muthia Harapan.</p>
+        </div>
+
+        <!-- SECTION 1: ALUR PENDAFTARAN -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Alur Pendaftaran</h3>
+            </div>
+
+            <!-- Steps Flow: 1 -> 2 -> 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
+                
+                <!-- Step 1 Card -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center text-center relative group hover:border-blue-500 transition duration-200">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mb-4 shadow-md shadow-blue-500/20">
+                        1
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">Pendaftaran Online</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Mengisi formulir pendaftaran akun dan data calon siswa secara daring melalui portal website ini.
+                    </p>
+                    <!-- Flow Arrow (Visible on MD and larger screens) -->
+                    <div class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-slate-100 rounded-full items-center justify-center text-slate-400 border border-slate-200">
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 Card -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center text-center relative group hover:border-blue-500 transition duration-200">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mb-4 shadow-md shadow-blue-500/20">
+                        2
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">Verifikasi Berkas</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Mengunggah persyaratan dokumen PDF dan verifikasi kelengkapan berkas administratif oleh panitia.
+                    </p>
+                    <!-- Flow Arrow (Visible on MD and larger screens) -->
+                    <div class="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-slate-100 rounded-full items-center justify-center text-slate-400 border border-slate-200">
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3 Card -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col items-center text-center relative group hover:border-blue-500 transition duration-200">
+                    <div class="w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mb-4 shadow-md shadow-blue-500/20">
+                        3
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base mb-2">Pengumuman & Daftar Ulang</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        Melihat hasil seleksi kelulusan pendaftaran dan melakukan pendaftaran ulang siswa baru.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: PERSYARATAN PDF -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Persyaratan PDF</h3>
+            </div>
+
+            <!-- Download PDF Card Container -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div class="flex items-center space-x-4">
+                    <div class="w-14 h-14 rounded-xl bg-red-50 border border-red-200 flex items-center justify-center text-red-600 text-3xl shrink-0">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-base">Dokumen Persyaratan & Panduan PPDB</h4>
+                        <p class="text-xs text-slate-500 mt-1">Format: PDF | Ukuran: 2.4 MB | Terakhir diperbarui: 2026</p>
+                    </div>
+                </div>
+                <a href="#download" onclick="alert('Mengunduh berkas Persyaratan PPDB PDF...'); return false;" class="w-full sm:w-auto inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-white bg-red-600 hover:bg-red-700 rounded-xl transition duration-200 shadow-sm hover:shadow shrink-0">
+                    <i class="fa-solid fa-download mr-2"></i>
+                    Unduh PDF Persyaratan
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FORMULIR ONLINE -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Formulir Online</h3>
+            </div>
+
+            <!-- Form Card matching the wireframe -->
+            <div class="bg-white p-6 sm:p-10 rounded-2xl border border-slate-200/80 shadow-sm max-w-2xl">
+                <form onsubmit="alert('Formulir Pendaftaran Berhasil Dikirim!'); return false;" class="space-y-6">
+                    
+                    <!-- Input Nama -->
+                    <div>
+                        <label for="nama" class="block text-sm font-semibold text-slate-700 mb-2">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap calon siswa" 
+                               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-sm transition duration-150">
+                    </div>
+
+                    <!-- Input Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-slate-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="nama@email.com" 
+                               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none text-sm transition duration-150">
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div>
+                        <button type="submit" class="w-full sm:w-auto px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-xl shadow-md shadow-blue-500/20 transition duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            Submit / Kirim Pendaftaran
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+            <p>&copy; 2026 SMK MUTHIA HARAPAN. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

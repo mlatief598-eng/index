@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Akademik (Setelah Login) - SMK MUTHIA HARAPAN</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- HEADER / TOPBAR -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & School Name -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- Logo Badge matching sketch -->
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-900 flex flex-col items-center justify-center text-white shadow-md shadow-blue-500/20 leading-none">
+                        <span class="text-[10px] font-bold tracking-widest">SMK</span>
+                        <i class="fa-solid fa-graduation-cap text-sm mt-0.5"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">
+                            SMK MUTHIA HARAPAN
+                        </h1>
+                        <p class="text-xs text-slate-500 font-medium">Unggul, Berkarakter & Berprestasi</p>
+                    </div>
+                </div>
+
+                <!-- User Profile & Logout Button (Logged In State) -->
+                <div class="flex items-center space-x-3">
+                    <div class="hidden sm:flex items-center space-x-3 text-right">
+                        <div>
+                            <span class="block text-xs font-bold text-slate-900">Muhammad Rizky</span>
+                            <span class="block text-[11px] text-slate-500">NISN: 005829104 / XII MIPA 1</span>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-blue-100 border border-blue-300 flex items-center justify-center text-blue-700 font-bold text-sm">
+                            MR
+                        </div>
+                    </div>
+                    <a href="#logout" class="inline-flex items-center justify-center px-4 py-2 sm:px-4 sm:py-2 text-xs sm:text-sm font-semibold text-rose-700 bg-rose-50 hover:bg-rose-100 border border-rose-200 rounded-lg transition duration-200 shadow-sm">
+                        <i class="fa-solid fa-right-from-bracket mr-2"></i>
+                        Logout
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-slate-900 text-white border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                   <a href="beranda.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Beranda</a>
+                    <a href="profil.html" class="px-4 py-3 text-xs sm:text-sm font-semibold text-blue-400 border-b-2 border-blue-500 bg-slate-800/50">Profil</a>
+                    <a href="akademik.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Akademik</a>
+                    <a href="kesisw aan.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Kesiswaan</a>
+                   <a href="portal.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Portal</a>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12 sm:space-y-14">
+
+        <!-- PAGE TITLE -->
+        <div class="border-b border-slate-200 pb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                    Portal Akademik
+                </h2>
+                <p class="text-sm text-slate-500 mt-1">Dasbor Pembelajaran & Informasi Akademik Siswa Terpadu.</p>
+            </div>
+            <div class="inline-flex items-center px-3 py-1.5 rounded-lg bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-semibold self-start sm:self-auto">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 mr-2 animate-pulse"></span>
+                Siswa Aktif - T.A. 2025/2026 Ganjil
+            </div>
+        </div>
+
+        <!-- SECTION 1: JADWAL PELAJARAN (2 SIDE-BY-SIDE TABLES/CARDS AS IN SKETCH) -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Jadwal Pelajaran</h3>
+            </div>
+
+            <!-- 2 Side-by-Side Schedule Tables -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                
+                <!-- Table 1: Sesi Pagi / Hari Senin - Rabu -->
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                        <div class="flex items-center space-x-2 text-blue-700 font-bold">
+                            <i class="fa-solid fa-calendar-day"></i>
+                            <h4 class="text-slate-900 font-bold">Jadwal Utama (Senin - Rabu)</h4>
+                        </div>
+                        <span class="text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded-md font-semibold">Ruang 12 IPA 1</span>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead class="bg-slate-50 text-slate-700 font-semibold border-b border-slate-200">
+                                <tr>
+                                    <th class="p-3">Hari / Jam</th>
+                                    <th class="p-3">Mata Pelajaran</th>
+                                    <th class="p-3">Pengajar</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 text-slate-600">
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Senin (07:00-08:30)</td>
+                                    <td class="p-3">Matematika Wajib</td>
+                                    <td class="p-3">Siti Nurhaliza, S.Pd</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Senin (08:30-10:00)</td>
+                                    <td class="p-3">Fisika Tingkat Lanjut</td>
+                                    <td class="p-3">Budi Santoso, M.Si</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Selasa (07:00-09:15)</td>
+                                    <td class="p-3">Kimia Peminatan</td>
+                                    <td class="p-3">Ratna Sari, S.Pd</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Rabu (07:00-09:15)</td>
+                                    <td class="p-3">Informatika / TIK</td>
+                                    <td class="p-3">Rahmat Hidayat, M.T</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Table 2: Sesi Siang / Hari Kamis - Jumat -->
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="flex items-center justify-between border-b border-slate-100 pb-3">
+                        <div class="flex items-center space-x-2 text-indigo-700 font-bold">
+                            <i class="fa-solid fa-calendar-week"></i>
+                            <h4 class="text-slate-900 font-bold">Jadwal Utama (Kamis - Jumat)</h4>
+                        </div>
+                        <span class="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-md font-semibold">Lab komputer / Kelas</span>
+                    </div>
+
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-xs sm:text-sm">
+                            <thead class="bg-slate-50 text-slate-700 font-semibold border-b border-slate-200">
+                                <tr>
+                                    <th class="p-3">Hari / Jam</th>
+                                    <th class="p-3">Mata Pelajaran</th>
+                                    <th class="p-3">Pengajar</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 text-slate-600">
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Kamis (07:00-09:15)</td>
+                                    <td class="p-3">Bahasa Inggris Wajib</td>
+                                    <td class="p-3">Dewi Lestari, M.Pd</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Kamis (09:30-11:45)</td>
+                                    <td class="p-3">Biologi Umum</td>
+                                    <td class="p-3">Drs. Hendra Wijaya</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Jumat (07:00-08:30)</td>
+                                    <td class="p-3">Pendidikan Agama</td>
+                                    <td class="p-3">Ust. Farhan, M.Ag</td>
+                                </tr>
+                                <tr class="hover:bg-slate-50">
+                                    <td class="p-3 font-medium text-slate-900">Jumat (08:30-10:30)</td>
+                                    <td class="p-3">Pendidikan Pancasila</td>
+                                    <td class="p-3">Agus Susanto, S.H</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: NILAI RAPOR & ABSENSI (SIDE-BY-SIDE CARDS AS IN SKETCH) -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            
+            <!-- NILAI RAPOR CARD -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Nilai Rapor</h3>
+                </div>
+
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="flex justify-between items-center bg-blue-50/70 p-4 rounded-xl border border-blue-100">
+                        <div>
+                            <span class="text-xs text-blue-600 font-semibold uppercase tracking-wider block">Indeks Prestasi Kumulatif</span>
+                            <span class="text-2xl sm:text-3xl font-extrabold text-blue-900">89.4 / 100</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="inline-block px-3 py-1 bg-blue-600 text-white font-bold rounded-lg text-sm">Predikat A</span>
+                        </div>
+                    </div>
+
+                    <!-- Mini Grades Summary Table -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs sm:text-sm font-semibold text-slate-700 py-1 border-b border-slate-100">
+                            <span>Mata Pelajaran Utama</span>
+                            <span>Nilai Akhir</span>
+                        </div>
+                        <div class="flex justify-between text-xs sm:text-sm py-1">
+                            <span class="text-slate-600">Matematika Wajib</span>
+                            <span class="font-bold text-slate-900">92 (A)</span>
+                        </div>
+                        <div class="flex justify-between text-xs sm:text-sm py-1">
+                            <span class="text-slate-600">Fisika</span>
+                            <span class="font-bold text-slate-900">88 (B+)</span>
+                        </div>
+                        <div class="flex justify-between text-xs sm:text-sm py-1">
+                            <span class="text-slate-600">Informatika</span>
+                            <span class="font-bold text-slate-900">95 (A)</span>
+                        </div>
+                        <div class="flex justify-between text-xs sm:text-sm py-1">
+                            <span class="text-slate-600">Bahasa Inggris</span>
+                            <span class="font-bold text-slate-900">90 (A)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABSENSI CARD -->
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                    <h3 class="text-xl font-bold text-slate-900">Absensi</h3>
+                </div>
+
+                <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="flex justify-between items-center bg-emerald-50/70 p-4 rounded-xl border border-emerald-100">
+                        <div>
+                            <span class="text-xs text-emerald-600 font-semibold uppercase tracking-wider block">Persentase Kehadiran</span>
+                            <span class="text-2xl sm:text-3xl font-extrabold text-emerald-900">98.2%</span>
+                        </div>
+                        <div class="text-right">
+                            <span class="inline-block px-3 py-1 bg-emerald-600 text-white font-bold rounded-lg text-sm">Sangat Baik</span>
+                        </div>
+                    </div>
+
+                    <!-- Attendance Breakdown Grid -->
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-xs text-slate-500 font-medium">Hadir</span>
+                            <span class="text-lg font-bold text-slate-900">110 Hari</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-xs text-slate-500 font-medium">Izin / Sakit</span>
+                            <span class="text-lg font-bold text-amber-600">2 Hari</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-xl border border-slate-100">
+                            <span class="block text-xs text-slate-500 font-medium">Tanpa Ket.</span>
+                            <span class="text-lg font-bold text-rose-600">0 Hari</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SECTION 3: PENGUMUMAN GURU (FULL WIDTH CARD AT THE BOTTOM AS IN SKETCH) -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Pengumuman Guru</h3>
+            </div>
+
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                
+                <!-- Announcement Item 1 -->
+                <div class="p-4 bg-amber-50/60 border-l-4 border-amber-500 rounded-r-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-amber-900 text-sm sm:text-base">Pengumpulan Tugas Akhir Proyek P5 (Matematika & Fisika)</span>
+                        <span class="text-xs text-amber-700">2 Jam yang lalu</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                        Diberitahukan kepada seluruh siswa kelas XII MIPA 1 bahwa pengumpulan naskah dan laporan proyek P5 paling lambat diunggah melalui portal ini pada hari Jumat pukul 23:59 WIB.
+                    </p>
+                    <div class="text-xs font-semibold text-amber-800 flex items-center">
+                        <i class="fa-solid fa-user-tie mr-1.5"></i> Oleh: Siti Nurhaliza, S.Pd (Wali Kelas)
+                    </div>
+                </div>
+
+                <!-- Announcement Item 2 -->
+                <div class="p-4 bg-slate-50 border-l-4 border-blue-500 rounded-r-xl space-y-2">
+                    <div class="flex items-center justify-between">
+                        <span class="font-bold text-slate-900 text-sm sm:text-base">Pelaksanaan Ujian Tengah Semester (UTS) Ganjil</span>
+                        <span class="text-xs text-slate-500">Kemarin</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Jadwal pelaksanaan UTS Ganjil dapat diunduh mulai hari ini. Pastikan seluruh administrasi presensi dan kelengkapan tugas telah dipenuhi.
+                    </p>
+                    <div class="text-xs font-semibold text-slate-700 flex items-center">
+                        <i class="fa-solid fa-bullhorn mr-1.5"></i> Oleh: Panitia Akademik SMAN Nusantara
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+            <p>&copy; 2026 SMA NEGERI NUSANTARA. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

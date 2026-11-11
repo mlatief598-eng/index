@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Akademik - SMA NEGERI NUSANTARA</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- HEADER / TOPBAR -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & School Name -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- Logo Badge ("SMAN") -->
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-900 flex items-center justify-center text-white shadow-md shadow-blue-500/20 font-bold text-xs leading-tight text-center">
+                        SMAN<br>N
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">
+                            SMK MUTHIA HARAPAAN CICALENGKANG
+                        </h1>
+                        <p class="text-xs text-slate-500 font-medium">Unggul, Berkarakter & Berprestasi</p>
+                    </div>
+                </div>
+
+                <!-- Login Portal Button -->
+                <div class="flex items-center">
+                    <a href="#login" class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition duration-200 shadow-sm hover:shadow">
+                        <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                        Login Portal
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-slate-900 text-white border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                    <a href="beranda.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Beranda</a>
+                    <a href="profil.html" class="px-4 py-3 text-xs sm:text-sm font-semibold text-blue-400 border-b-2 border-blue-500 bg-slate-800/50">Profil</a>
+                    <a href="akademik.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Akademik</a>
+                    <a href="kesiswaan.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Kesiswaan</a>
+                   <a href="portal.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Portal</a>
+                 </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-12 sm:space-y-16">
+
+        <!-- PAGE TITLE -->
+        <div class="border-b border-slate-200 pb-4">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+                Halaman Akademik
+            </h2>
+            <p class="text-sm text-slate-500 mt-1">Informasi sistem pembelajaran kurikulum dan tenaga pendidik SMA Negeri Nusantara.</p>
+        </div>
+
+        <!-- SECTION 1: KURIKULUM (Matching wireframe box) -->
+        <section class="space-y-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Kurikulum</h3>
+            </div>
+
+            <!-- Wide Content Box for Kurikulum -->
+            <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900">Kurikulum Merdeka Berbasis Digital & Riset</h4>
+                        <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">Tahun Ajaran Aktif 2025/2026</span>
+                    </div>
+                </div>
+
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                    SMK MUTHIA HARAPAN menerapkan <strong>Kurikulum Merdeka</strong> yang berfokus pada pengembangan minat, bakat, serta penguatan karakter Profil Pelajar Pancasila. Sistem pembelajaran didukung sarana digital terpadu, pembelajaran berbasis proyek (Project-Based Learning), dan bimbingan persiapan masuk Perguruan Tinggi Negeri (PTN) unggulan maupun luar negeri.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600">
+                        <i class="fa-solid fa-check-circle text-blue-600 mr-1.5"></i> Pembelajaran Berbasis STEM & STEM+
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600">
+                        <i class="fa-solid fa-check-circle text-blue-600 mr-1.5"></i> Program Kelas Minat & Bakat
+                    </div>
+                    <div class="p-3 bg-slate-50 rounded-xl border border-slate-100 text-xs text-slate-600">
+                        <i class="fa-solid fa-check-circle text-blue-600 mr-1.5"></i> Penguatan Literasi Digital & Bahasa
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DAFTAR GURU (Matching wireframe 2x3 Grid) -->
+        <section class="space-y-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Daftar Guru</h3>
+                </div>
+                <span class="text-xs sm:text-sm font-medium text-blue-600 hover:underline cursor-pointer">Lihat Semua Guru &rarr;</span>
+            </div>
+
+            <!-- 2 Rows x 3 Columns Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Guru 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 mb-4 rounded-full bg-slate-100 border-4 border-blue-50 overflow-hidden flex items-center justify-center text-slate-400">
+                        <!-- SVG Avatar matching the sketch icon style -->
+                        <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">PAK AFUD</h4>
+                    <p class="text-xs font-semibold text-blue-600 mb-2">Guru Matematika</p>
+                    <p class="text-xs text-slate-500 mb-4">Pengajar Kelas 12 | Pengampu OSN Matematika</p>
+                    <button class="mt-auto w-full py-2 px-4 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition duration-200">
+                        Profil Lengkap
+                    </button>
+                </div>
+
+                <!-- Guru 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 mb-4 rounded-full bg-slate-100 border-4 border-blue-50 overflow-hidden flex items-center justify-center text-slate-400">
+                        <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">pak banu</h4>
+                    <p class="text-xs font-semibold text-blue-600 mb-2">Guru Bahasa Indonesia</p>
+                    <p class="text-xs text-slate-500 mb-4">Pengajar Kelas 12</p>
+                    <button class="mt-auto w-full py-2 px-4 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition duration-200">
+                        Profil Lengkap
+                    </button>
+                </div>
+
+                <!-- Guru 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 mb-4 rounded-full bg-slate-100 border-4 border-blue-50 overflow-hidden flex items-center justify-center text-slate-400">
+                        <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">king iki</h4>
+                    <p class="text-xs font-semibold text-blue-600 mb-2">Guru rpl</p>
+                    <p class="text-xs text-slate-500 mb-4">Pengajar Kelas 12</p>
+                    <button class="mt-auto w-full py-2 px-4 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition duration-200">
+                        Profil Lengkap
+                    </button>
+                </div>
+
+                <!-- Guru 4 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 mb-4 rounded-full bg-slate-100 border-4 border-blue-50 overflow-hidden flex items-center justify-center text-slate-400">
+                        <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">bu hani</h4>
+                    <p class="text-xs font-semibold text-blue-600 mb-2">mapel pilihan</p>
+                    <p class="text-xs text-slate-500 mb-4">Pengajar Kelas 12</p>
+                    <button class="mt-auto w-full py-2 px-4 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition duration-200">
+                        Profil Lengkap
+                    </button>
+                </div>
+
+                <!-- Guru 5 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 mb-4 rounded-full bg-slate-100 border-4 border-blue-50 overflow-hidden flex items-center justify-center text-slate-400">
+                        <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">Agus </h4>
+                    <p class="text-xs font-semibold text-blue-600 mb-2">Guru Informatika / TIK</p>
+                    <p class="text-xs text-slate-500 mb-4">Pengajar Semua Tingkat </p>
+                    <button class="mt-auto w-full py-2 px-4 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition duration-200">
+                        Profil Lengkap
+                    </button>
+                </div>
+
+                <!-- Guru 6 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition duration-200 flex flex-col items-center text-center">
+                    <div class="w-24 h-24 mb-4 rounded-full bg-slate-100 border-4 border-blue-50 overflow-hidden flex items-center justify-center text-slate-400">
+                        <svg class="w-16 h-16 text-slate-400" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-slate-900 text-base">acong</h4>
+                    <p class="text-xs font-semibold text-blue-600 mb-2">Guru Biologi</p>
+                    <p class="text-xs text-slate-500 mb-4">Pengajar Kelas 12/p>
+                    <button class="mt-auto w-full py-2 px-4 bg-slate-100 hover:bg-blue-600 hover:text-white text-slate-700 text-xs font-semibold rounded-lg transition duration-200">
+                        Profil Lengkap
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs sm:text-sm">
+            <p>&copy; 2026 smk muthia harapan. Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

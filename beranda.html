@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama - SMK MUTHIA HARAPAN</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+
+    <!-- HEADER / TOPBAR -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo & School Name -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- Logo Badge matching sketch -->
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-700 to-indigo-900 flex flex-col items-center justify-center text-white shadow-md shadow-blue-500/20 leading-none">
+                        <span class="text-[10px] font-bold tracking-widest">SMK</span>
+                        <i class="fa-solid fa-graduation-cap text-sm mt-0.5"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg sm:text-xl font-bold text-slate-900 tracking-tight leading-tight">
+                            SMK MUTHIA HARAPAN
+                        </h1>
+                        <p class="text-xs text-slate-500 font-medium">Unggul, Berkarakter & Berprestasi</p>
+                    </div>
+                </div>
+
+                <!-- Login Portal Button -->
+                <div class="flex items-center">
+                    <a href="portal-akademik.html" class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 text-xs sm:text-sm font-semibold text-blue-700 bg-blue-50 hover:bg-blue-100 border border-blue-200 rounded-lg transition duration-200 shadow-sm hover:shadow">
+                        <i class="fa-solid fa-right-to-bracket mr-2"></i>
+                        Login Portal
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NAVIGATION BAR -->
+        <nav class="bg-slate-900 text-white border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center overflow-x-auto whitespace-nowrap scrollbar-none py-1">
+                  <a href="beranda.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Beranda</a>
+                    <a href="profil.html" class="px-4 py-3 text-xs sm:text-sm font-semibold text-blue-400 border-b-2 border-blue-500 bg-slate-800/50">Profil</a>
+                    <a href="akademik.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Akademik</a>
+                    <a href="kesiswaan.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Kesiswaan</a>
+                   <a href="portal.html" class="px-4 py-3 text-xs sm:text-sm font-medium text-slate-300 hover:text-white transition duration-150">Portal</a>
+                
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow space-y-12 sm:space-y-16 pb-12">
+
+        <!-- SECTION 1: HERO CAROUSEL / SLIDER BANNER -->
+        <section class="bg-slate-200/70 border-b border-slate-300/80 py-8 sm:py-12 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                
+                <!-- Slider Nav Arrows -->
+                <button aria-label="Previous Slide" class="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-700 shadow-md flex items-center justify-center transition duration-200 focus:outline-none">
+                    <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+                <button aria-label="Next Slide" class="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-slate-700 shadow-md flex items-center justify-center transition duration-200 focus:outline-none">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+
+                <!-- Slider Contents (2 Side-by-Side Banners matching sketch) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-8 sm:px-12">
+                    
+                    <!-- Card 1: Prestasi Siswa (With Mountain/Image Icon) -->
+                    <div class="bg-white rounded-2xl border-2 border-slate-300 p-6 sm:p-8 flex flex-col justify-between shadow-sm min-h-[220px] relative overflow-hidden group hover:border-blue-500 transition duration-300">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs font-bold rounded-full mb-3">Unggulan</span>
+                                <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">Prestasi Siswa</h3>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-2">Capaian Juara 3 Lomba PMR dan Lomba Futsal juara 1.</p>
+                            </div>
+                            <div class="w-16 h-16 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600 shrink-0">
+                                <i class="fa-solid fa-image text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-center text-xs font-semibold text-blue-700 group-hover:translate-x-1 transition duration-200">
+                            <span>Lihat Selengkapnya</span>
+                            <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Fasilitas (With Placeholder X Graphic) -->
+                    <div class="bg-white rounded-2xl border-2 border-slate-300 p-6 sm:p-8 flex flex-col justify-between shadow-sm min-h-[220px] relative overflow-hidden group hover:border-blue-500 transition duration-300">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="inline-block px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded-full mb-3">Fasilitas Modern</span>
+                                <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug">Fasilitas Sekolah</h3>
+                                <p class="text-xs sm:text-sm text-slate-600 mt-2">Laboratorium Komputer, Perpustakaan Digital & Lapangan Olahraga.</p>
+                            </div>
+                            <!-- Structural Placeholder Box (X shape matching wireframe) -->
+                            <div class="w-16 h-16 rounded-xl bg-slate-100 border border-slate-300 flex items-center justify-center text-slate-400 shrink-0 relative">
+                                <i class="fa-solid fa-xmark text-2xl"></i>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-center text-xs font-semibold text-blue-700 group-hover:translate-x-1 transition duration-200">
+                            <span>Jelajahi Fasilitas</span>
+                            <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Slider Dot Navigation -->
+                <div class="flex items-center justify-center space-x-2 mt-6">
+                    <span class="w-3 h-3 rounded-full bg-slate-800 cursor-pointer"></span>
+                    <span class="w-3 h-3 rounded-full bg-slate-400/60 hover:bg-slate-600 cursor-pointer transition"></span>
+                    <span class="w-3 h-3 rounded-full bg-slate-400/60 hover:bg-slate-600 cursor-pointer transition"></span>
+                    <span class="w-3 h-3 rounded-full bg-slate-400/60 hover:bg-slate-600 cursor-pointer transition"></span>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
+
+            <!-- SECTION 2: SAMBUTAN KEPALA SEKOLAH -->
+            <section class="bg-white p-6 sm:p-10 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Sambutan Kepala Sekolah</h3>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start gap-6 sm:gap-8">
+                    <!-- Photo Avatar -->
+                    <div class="flex flex-col items-center shrink-0">
+                        <div class="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-blue-50 border-4 border-blue-100 shadow-inner flex items-center justify-center text-slate-400 overflow-hidden">
+                            <i class="fa-solid fa-user-tie text-5xl sm:text-6xl text-slate-400"></i>
+                        </div>
+                        <span class="text-sm font-bold text-slate-900 mt-3 text-center">ASEP SAEPUDIN</span>
+                        <span class="text-xs text-slate-500">Kepala SMK Muthia Harapan</span>
+                    </div>
+
+                    <!-- Text Paragraphs matching wireframe text lines -->
+                    <div class="space-y-3 text-slate-600 text-sm sm:text-base leading-relaxed text-justify md:text-left">
+                        <p class="font-medium text-slate-900">
+                            "Selamat Datang di Portal Resmi SMK Muthia Harapan."
+                        </p>
+                        <p>
+                            Puji syukur kita panjatkan kehadirat Tuhan Yang Maha Esa atas terwujudnya sistem informasi digital resmi sekolah ini. SMA Negeri Nusantara berkomitmen secara berkelanjutan dalam menghadirkan ekosistem pendidikan berkelanjutan yang adaptif terhadap perkembangan sains dan teknologi abad ke-21.
+                        </p>
+                        <p>
+                            Kami terus mendorong potensi siswa melalui kurikulum terintegrasi, pembentukan karakter luhur, serta bimbingan intensif dari staf pengajar profesional. Semoga wadah informasi ini memberikan kemudahan aksesibilitas bagi seluruh civitas akademika dan masyarakat luas.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 3: BERITA TERBARU (3 COLUMNS GRID MATCHING SKETCH) -->
+            <section class="space-y-6">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                        <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Berita Terbaru</h3>
+                    </div>
+                    <a href="#berita" class="text-xs sm:text-sm font-semibold text-blue-600 hover:text-blue-800 transition">Lihat Semua Berita &rarr;</a>
+                </div>
+
+                <!-- 3 Columns Layout with Image Placeholder X -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- News Card 1 -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col hover:shadow-md transition duration-200 group">
+                        <!-- Image Box Placeholder with X -->
+                        <div class="h-44 bg-slate-100 border-b border-slate-200 flex items-center justify-center relative text-slate-400 group-hover:bg-slate-200/60 transition">
+                            <i class="fa-solid fa-xmark text-4xl opacity-40"></i>
+                            <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md">Akademik</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                            <div>
+                                <span class="text-xs text-slate-400 block mb-1">02 November 2026</span>
+                                <h4 class="font-bold text-slate-900 text-base leading-snug group-hover:text-blue-600 transition">
+                                    Penerapan Metode Pembelajaran Berbasis Proyek P5 Semester Ganjil
+                                </h4>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                    Siswa-siswi SMK Muthia Harapan menunjukkan hasil karya inovatif pada pmr dan futsal.
+                                </p>
+                            </div>
+                            <div class="w-full border-t border-slate-100 pt-3 flex justify-end">
+                                <span class="text-xs font-semibold text-blue-600">Baca Selengkapnya &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col hover:shadow-md transition duration-200 group">
+                        <!-- Image Box Placeholder with X -->
+                        <div class="h-44 bg-slate-100 border-b border-slate-200 flex items-center justify-center relative text-slate-400 group-hover:bg-slate-200/60 transition">
+                            <i class="fa-solid fa-xmark text-4xl opacity-40"></i>
+                            <span class="absolute top-3 left-3 bg-amber-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md">Prestasi</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                            <div>
+                                <span class="text-xs text-slate-400 block mb-1">28 Oktober 2026</span>
+                                <h4 class="font-bold text-slate-900 text-base leading-snug group-hover:text-blue-600 transition">
+                                    24 desember pmr siswa siswi meraih juara 3 lomba tingkat nasional
+                                </h4>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                    Perwakilan tim king rrq berhasil meraih juara 1 nasional 
+                                </p>
+                            </div>
+                            <div class="w-full border-t border-slate-100 pt-3 flex justify-end">
+                                <span class="text-xs font-semibold text-blue-600">Baca Selengkapnya &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden flex flex-col hover:shadow-md transition duration-200 group">
+                        <!-- Image Box Placeholder with X -->
+                        <div class="h-44 bg-slate-100 border-b border-slate-200 flex items-center justify-center relative text-slate-400 group-hover:bg-slate-200/60 transition">
+                            <i class="fa-solid fa-xmark text-4xl opacity-40"></i>
+                            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-md">Kegiatan</span>
+                        </div>
+                        <div class="p-5 flex flex-col flex-grow justify-between space-y-3">
+                            <div>
+                                <span class="text-xs text-slate-400 block mb-1">20 Oktober 2026</span>
+                                <h4 class="font-bold text-slate-900 text-base leading-snug group-hover:text-blue-600 transition">
+                                    Sosialisasi Persiapan Seleksi Masuk Perguruan Tinggi Negeri (SNBP)
+                                </h4>
+                                <p class="text-xs text-slate-500 mt-2 line-clamp-2">
+                                    Bimbingan Karir dan Konseling menyelenggarakan strategi pemetaan jurusan perguruan tinggi bagi siswa kelas XII.
+                                </p>
+                            </div>
+                            <div class="w-full border-t border-slate-100 pt-3 flex justify-end">
+                                <span class="text-xs font-semibold text-blue-600">Baca Selengkapnya &rarr;</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION 4: KEGIATAN MENDATANG & KEGIATAN OSIS -->
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                
+                <!-- Box 1: Kegiatan Mendatang (Ekstrakurikuler) -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                        <h3 class="text-xl font-bold text-slate-900">Kegiatan Mendatang</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- List Item 1 -->
+                        <div class="flex items-start space-x-4 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-futbol text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Latihan Rutin Ekstrakurikuler Olahraga</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Jumat, 06 November 2026 | Lapangan Utama</p>
+                            </div>
+                        </div>
+
+                        <!-- List Item 2 -->
+                        <div class="flex items-start space-x-4 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-music text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Gladi Bersih Seni Musik & Teater</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Sabtu, 07 November 2026 | Aula Utama</p>
+                            </div>
+                        </div>
+
+                        <!-- List Item 3 -->
+                        <div class="flex items-start space-x-4 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-campground text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Pramuka & PMR Pelantikan Anggota Baru</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Minggu, 15 November 2026 | Buper Nusantara</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box 2: Kegiatan OSIS -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-1.5 h-7 bg-blue-600 rounded-full"></div>
+                        <h3 class="text-xl font-bold text-slate-900">Kegiatan OSIS</h3>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- OSIS Agenda 1 -->
+                        <div class="flex items-start space-x-4 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-users text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Musyawarah Besar Pemilihan Ketua OSIS 2026/2027</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Senin, 10 November 2026 | Ruang Pertemuan</p>
+                            </div>
+                        </div>
+
+                        <!-- OSIS Agenda 2 -->
+                        <div class="flex items-start space-x-4 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-hand-holding-heart text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Bakti Sosial & Donor Darah Kemanusiaan</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Kamis, 19 November 2026 | Selasar GSG</p>
+                            </div>
+                        </div>
+
+                        <!-- OSIS Agenda 3 -->
+                        <div class="flex items-start space-x-4 p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                            <div class="w-10 h-10 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-trophy text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-900">Pekan Olahraga & Art Classmeet Semester Ganjil</h4>
+                                <p class="text-xs text-slate-500 mt-0.5">Desember 2026 | Area Olahraga Sekolah</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER (3 COLUMNS AS SHOWN IN SKETCH) -->
+    <footer class="bg-slate-900 text-slate-300 pt-12 pb-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-slate-800">
+                
+                <!-- Col 1: Tautan Penting -->
+                <div class="space-y-4">
+                    <h4 class="text-base font-bold text-white tracking-wider uppercase border-b border-slate-800 pb-2 inline-block">
+                        Tautan Penting
+                    </h4>
+                    <ul class="space-y-2.5 text-xs sm:text-sm">
+                        <li>
+                            <a href="#kalender" class="hover:text-blue-400 transition flex items-center">
+                                <i class="fa-solid fa-angle-right mr-2 text-xs text-slate-500"></i> Kalender Akademik
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#osis" class="hover:text-blue-400 transition flex items-center">
+                                <i class="fa-solid fa-angle-right mr-2 text-xs text-slate-500"></i> Organisasi Siswa (OSIS)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="ppdb.html" class="hover:text-blue-400 transition flex items-center">
+                                <i class="fa-solid fa-angle-right mr-2 text-xs text-slate-500"></i> Pendaftaran PPDB Online
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portal-akademik.html" class="hover:text-blue-400 transition flex items-center">
+                                <i class="fa-solid fa-angle-right mr-2 text-xs text-slate-500"></i> Portal Akademik Siswa
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="hover:text-blue-400 transition flex items-center">
+                                <i class="fa-solid fa-angle-right mr-2 text-xs text-slate-500"></i> Struktur Organisasi Sekolah
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 2: Alamat & Kontak -->
+                <div class="space-y-4">
+                    <h4 class="text-base font-bold text-white tracking-wider uppercase border-b border-slate-800 pb-2 inline-block">
+                        Alamat & Kontak
+                    </h4>
+                    <div class="space-y-3 text-xs sm:text-sm text-slate-400">
+                        <p class="flex items-start">
+                            <i class="fa-solid fa-location-dot mt-1 mr-3 text-blue-500 shrink-0"></i>
+                            <span>Jl. Babakan Peuteuy No.300, Babakan Peuteuy, Kec. Cicalengka, Kabupaten Bandung, Jawa Barat 40395</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-blue-500 shrink-0"></i>
+                            <span>0821</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3 text-blue-500 shrink-0"></i>
+                            <span>info@smk-muthia.sch.id</span>
+                        </p>
+                        <p class="flex items-center">
+                            <i class="fa-solid fa-clock mr-3 text-blue-500 shrink-0"></i>
+                            <span>Senin - Jumat: 07:00 - 15:30 WIB</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Col 3: Peta Lokasi (Map Placeholder matching sketch) -->
+                <div class="space-y-4">
+                    <h4 class="text-base font-bold text-white tracking-wider uppercase border-b border-slate-800 pb-2 inline-block">
+                        Peta Lokasi
+                    </h4>
+                    <div class="bg-slate-800 rounded-xl overflow-hidden border border-slate-700 h-40 relative flex items-center justify-center text-center p-4 group">
+                        <!-- Location Pin Visual -->
+                        <div class="flex flex-col items-center">
+                            <div class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg shadow-lg mb-2 group-hover:bounce transition">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-slate-200">SMK MUTHIA HARAPAN</span>
+                            <span class="text-[11px] text-slate-400 mt-0.5">Klik untuk membuka Google Maps</span>
+                        </div>
+                        <a href="https://maps.google.com/maps?q=Jl.+Babakan+Peuteuy+No.300,+Babakan+Peuteuy,+Kec.+Cicalengka,+Kabupaten+Bandung,+Jawa+Barat+40395" target="_blank" class="absolute inset-0 bg-blue-900/10 hover:bg-transparent transition"></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 SMK MUTHIA HARAPAN CICALENGKA. Hak Cipta Dilindungi Undang-Undang.</p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
